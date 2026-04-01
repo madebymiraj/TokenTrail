@@ -368,9 +368,14 @@ transition: "opacity 0.5s ease, transform 0.5s ease",
 
 return (
 <div style={{ ...PAGE_BG, padding: "32px 20px 60px" }}>
-<link href={FONTS_LINK} rel="stylesheet" />
-<style>{@keyframes fadeIn { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: translateY(0) } }}</style>
-<div style={{ maxWidth: 720, margin: "0 auto" }}>
+  <link href={FONTS_LINK} rel="stylesheet" />
+  <style>{`
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  `}</style>
+  <div style={{ maxWidth: 720, margin: "0 auto" }}>
 
 {/* Header */}    
     <div style={{ textAlign: "center", marginBottom: 36, ...sectionStyle(1) }}>    
