@@ -128,7 +128,7 @@ function MiniBar({ pct, color = "#E8A87C" }) {
 return (
 <div style={{ width: "100%", height: 6, background: "#F0EBE3", borderRadius: 100, overflow: "hidden" }}>
 <div style={{
-width: ${Math.min(100, pct)}%,
+width: `${Math.min(100, pct)}%`,
 height: "100%",
 background: color,
 borderRadius: 100,
