@@ -280,10 +280,10 @@ return () => { cancelled = true; };
 const step = loadingSteps[currentStep] || loadingSteps[0];
 
 return (
-<div style={{ ...PAGE_BG, display: "flex", alignItems: "center", justifyContent: "center" }}>
-<link href={FONTS_LINK} rel="stylesheet" />
-<style>{@keyframes spin { to { transform: rotate(360deg) } } @keyframes pulse { 0%,100% { opacity: 0.5 } 50% { opacity: 1 } }}</style>
-<div style={{ width: "100%", maxWidth: 480, textAlign: "center" }}>
+  <div style={{ ...PAGE_BG, display: "flex", alignItems: "center", justifyContent: "center" }}>
+    <link href={FONTS_LINK} rel="stylesheet" />
+    <style>{`@keyframes spin { to { transform: rotate(360deg); } } @keyframes pulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }`}</style>
+    <div style={{ width: "100%", maxWidth: 480, textAlign: "center" }}>
 {/* Spinner */}
 <div style={{
 width: 64, height: 64, margin: "0 auto 20px",
